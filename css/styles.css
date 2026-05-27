@@ -3134,8 +3134,8 @@ input::-moz-focus-inner {
 }
 
 .s-header__logo img {
-    width: 300px;
-    height: 60px;
+    width: 200px;
+    height: 40px;
     margin-bottom: 0;
     
 }
@@ -3155,7 +3155,7 @@ input::-moz-focus-inner {
     line-height: 6rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
-    padding-left: 20rem;
+    padding-left: 50px;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: .4em;
@@ -3327,7 +3327,7 @@ input::-moz-focus-inner {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 2000px) {
     .s-header__logo {
         left: 6rem;
     }
@@ -3339,7 +3339,7 @@ input::-moz-focus-inner {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .s-header__nav-wrap {
         padding-left: 17.6rem;
     }
@@ -3348,7 +3348,7 @@ input::-moz-focus-inner {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1060px) {
     .s-header {
         top: var(--vspace-0_5);
         height: 8rem;
