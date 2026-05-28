@@ -4254,6 +4254,7 @@ html.no-csstransitions .s-hero__content {
 .s-portfolio__list {
     max-width: calc(var(--width-max) + 40px);
     padding-top: var(--vspace-1_5);
+   justify-content: center;
 }
 
 .folio-item {
@@ -4764,6 +4765,7 @@ html.no-csstransitions .s-hero__content {
     padding-bottom: var(--vspace-1);
     color: white;
     background-color: var(--color-gray-19);
+    
 }
 
 .s-footer a {
