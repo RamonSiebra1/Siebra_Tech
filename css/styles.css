@@ -1566,7 +1566,7 @@ html, body {
 }
 
 body {
-    background: var(--color-body);
+    background: #121417;
     font-family: var(--font-1);
     font-size: var(--text-size);
     font-style: normal;
@@ -3136,7 +3136,8 @@ input::-moz-focus-inner {
 
 .s-header__logo img {
     width: 200px;
-    height: 40px;
+    height: 33px;
+    margin-top: 5px;
     margin-bottom: 0;
     padding: 0;
     
@@ -4800,7 +4801,7 @@ html.no-csstransitions .s-hero__content {
     
 }
 
-.s-footer__block--end::before {
+/*.s-footer__block--end::before {
     display: block;
     content: "";
     height: 1px;
@@ -4809,7 +4810,7 @@ html.no-csstransitions .s-hero__content {
     position: absolute;
     top: var(--vspace-0_25);
     left: var(--gutter-lg);
-}
+}*/
 
 .s-footer__block--end .btn {
     background-color: white;
@@ -4986,4 +4987,14 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     
     }
+}
+
+section {
+    max-width: 1700px; /* Largura máxima da sua faixa */
+    width: 100%;       /* Garante que ele diminua em telas menores */
+    margin-left: auto; /* Centraliza o bloco na horizontal */
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding: 0 20px;   /* Adiciona respiro nas laterais */
 }
