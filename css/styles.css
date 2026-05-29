@@ -750,12 +750,13 @@ textarea {
     -ms-flex: 1 1 0%;
     -webkit-box-flex: 1;
     flex: 1 1 0%;
-    padding: 0 var(--gutter-lg);
+    padding:10 10 10 10 var(--gutter-lg);
+    
 }
 
-.collapse>.column, .column.collapse {
-    padding: 0;
-}
+/*.collapse>.column, .column.collapse {
+    padding: 5;
+}*/
 
 /* flex row containers utility classes
  */
@@ -4176,7 +4177,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-services {
     background-color: var(--color-bg);
-    padding-top: calc(6 * var(--space));
+    
     padding-bottom: var(--vspace-2);
 }
 
@@ -4246,7 +4247,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-portfolio {
     background-color: var(--color-bg);
-    padding-top: calc(7 * var(--space));
+    padding-top: calc(4 * var(--space));
     padding-bottom: 35px;
 }
 
@@ -4263,6 +4264,7 @@ html.no-csstransitions .s-hero__content {
 .folio-item {
     position: relative;
     overflow: hidden;
+    margin: 10px;
 }
 
 .folio-item__caption {
@@ -4276,6 +4278,17 @@ html.no-csstransitions .s-hero__content {
 }
 
 .folio-item__thumb a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: rgba(0, 89, 255, 0.20);
+
+    transition: all .5s ease;
+}
+
+/*.folio-item__thumb a::before {
     z-index: 1;
     content: "";
     display: block;
@@ -4289,7 +4302,7 @@ html.no-csstransitions .s-hero__content {
     height: 100%;
     -webkit-transition: all, .5s;
     transition: all, .5s;
-}
+}*/
 
 .folio-item__thumb a::after {
     z-index: 1;
@@ -4317,9 +4330,15 @@ html.no-csstransitions .s-hero__content {
 }
 
 .folio-item__thumb img {
-    vertical-align: bottom;
+    filter: grayscale(50%) brightness(.8);
+    transition: all .5s ease;
     margin-bottom: 0;
 }
+
+/*.folio-item__thumb img {
+    vertical-align: bottom;
+    margin-bottom: 0;
+}*/
 
 /* portfolio info
  *---------------------------------------------- */
@@ -4397,9 +4416,23 @@ html.no-csstransitions .s-hero__content {
 /* on hover
  *---------------------------------------------- */
 .folio-item:hover .folio-item__thumb a::before {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.80) 5%,
+        rgba(0, 0, 0, 0.45) 30%,
+        rgba(0, 0, 0, 0.00) 55%
+    );
+}
+
+ /*.folio-item:hover .folio-item__thumb a::before {
+    background: rgba(0, 89, 255, 0);
+}*/
+
+/* .folio-item:hover .folio-item__thumb a::before {
     opacity: 1;
     visibility: visible;
-}
+}*/
 
 .folio-item:hover .folio-item__thumb a::after {
     opacity: 1;
@@ -4420,6 +4453,13 @@ html.no-csstransitions .s-hero__content {
     visibility: visible;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+}
+
+
+/*novo*/
+.folio-item:hover .folio-item__thumb img {
+    filter: grayscale(0%) brightness(1);
+    transform: scale(1.03);
 }
 
 
@@ -4481,7 +4521,7 @@ html.no-csstransitions .s-hero__content {
 .s-clients {
     background-color: var(--color-bg);
     padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-2);
     position: relative;
 }
 
