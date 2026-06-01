@@ -4286,6 +4286,7 @@ html.no-csstransitions .s-hero__content {
     background: rgba(0, 89, 255, 0.20);
 
     transition: all .5s ease;
+    border-radius: 10px;
 }
 
 /*.folio-item__thumb a::before {
@@ -4327,12 +4328,14 @@ html.no-csstransitions .s-hero__content {
     position: absolute;
     left: 50%;
     top: 50%;
+    
 }
 
 .folio-item__thumb img {
     filter: grayscale(50%) brightness(.8);
     transition: all .5s ease;
     margin-bottom: 0;
+    border-radius: 10px;
 }
 
 /*.folio-item__thumb img {
@@ -4460,6 +4463,8 @@ html.no-csstransitions .s-hero__content {
 .folio-item:hover .folio-item__thumb img {
     filter: grayscale(0%) brightness(1);
     transform: scale(1.03);
+    border-radius: 10px;
+    
 }
 
 
